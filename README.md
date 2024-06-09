@@ -1,7 +1,7 @@
-Sonar Mine Prediction
+**Sonar Mine Prediction**
 This project focuses on building a predictive model to distinguish between rocks and mines using sonar signals. Sonar signals are used in many applications, such as underwater exploration and object detection, and accurately identifying whether an object is a rock or a mine is crucial in these contexts.
 
-Table of Contents
+**Table of Contents**
 Project Overview
 Dataset
 Installation
@@ -11,26 +11,20 @@ Evaluation
 Results
 Contributing
 Project Overview
+
 The goal of this project is to build a classification model that can predict whether an object detected by sonar signals is a mine or a rock. The dataset used for this task is the "Sonar, Mines vs. Rocks" dataset from the UCI Machine Learning Repository.
 
-Dataset
+**Dataset**
 The dataset contains 208 instances and 60 attributes, where each attribute is a measure of the energy within a particular frequency band, integrated over a certain period of time. The label column contains the class (Mine or Rock).
 
-Features
+**Features**
 60 numeric attributes representing energy levels at various frequencies.
 1 target attribute indicating the object type: 'M' for mine and 'R' for rock.
-Source
+**Source**
 The dataset can be found on the UCI Machine Learning Repository: Sonar Mines vs Rocks Dataset.
 
-Installation
+**Installation**
 To get started with this project, you need to have Python and some essential libraries installed.
-
-Clone the repository:
-
-sh
-Copy code
-git clone https://github.com/yourusername/sonar-mine-prediction.git
-cd sonar-mine-prediction
 Install the required packages:
 
 sh
@@ -44,11 +38,13 @@ predictions = make_prediction(model, X_test)
 Model Training
 The model training process involves several steps:
 
-Data Preprocessing: Handling missing values, feature scaling, and splitting the dataset into training and testing sets.
+**Data Preprocessing:** 
+Handling missing values, feature scaling, and splitting the dataset into training and testing sets.
 Model Selection: We experimented with different models, including logistic regression, SVM, and random forests.
-Training: Training the selected model using the training dataset.
+**Training:**
+Training the selected model using the training dataset.
 Hyperparameter Tuning: Optimizing the model parameters for better performance.
-Evaluation
+**Evaluation**
 We evaluate the model using common metrics such as accuracy, precision, recall, and F1-score. Cross-validation is also used to ensure the model's robustness.
 
 python
@@ -58,9 +54,7 @@ evaluate_model(model, X_test, y_test)
 Results
 The final model achieved an accuracy of 85% on the test set, with precision, recall, and F1-score indicating a well-balanced model performance. Detailed results and performance metrics can be found in the results directory.
 
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
+**Contributing**
 Fork the Project.
 Create your Feature Branch (git checkout -b feature/AmazingFeature).
 Commit your Changes (git commit -m 'Add some AmazingFeature').
